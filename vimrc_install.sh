@@ -4,6 +4,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 cat ./.my_vimrc > ~/.vimrc
 source ~/.vimrc
+vim -c 'PlugInstall'
 
 cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --clangd-completer
