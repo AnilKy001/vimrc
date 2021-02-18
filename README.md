@@ -1,4 +1,4 @@
-# minimal vimrc configuration
+# Minimal vimrc configuration
 This is a minimal vimrc configuration for those who want to use vim as an IDE.
 To install it, clone the repository and run the following,
 
