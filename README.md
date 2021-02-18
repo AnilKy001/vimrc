@@ -7,3 +7,4 @@ bash vimrc_install.sh
 ```
 
 * Note that this is for Unix-like operating systems (Linux distros and MacOS).
+* Visit ".my_vimrc" file for some keyboard shortcuts.
