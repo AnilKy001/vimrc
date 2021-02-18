@@ -1,0 +1,53 @@
+syntax on
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set incsearch
+set backspace=indent,eol,start
+
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'junegunn/goyo.vim'
+Plug 'dense-analysis/ale'
+
+call plug#end()
+
+colorscheme gruvbox
+set background=dark
+set laststatus=2
+let g:ctrlp_use_caching=0
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
+set showmatch
+hi MatchParen cterm=bold ctermbg=darkred ctermfg=none
+
+"Control + w + v => Vertical split.
+"Control + w + s => Horizontal split.
+"Control + (h | j | k | l) => Go to pane.
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+set completeopt=menuone,longest
+
+":tabe + <file_path> => open file in new window.
+"Control + x => Go to right window. 
+"Control + z => Go to left window.
+nnoremap <C-x> :tabn<CR>
+nnoremap <C-z> :tabp<CR>
