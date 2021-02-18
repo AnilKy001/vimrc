@@ -3,6 +3,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 cat ./.my_vimrc > ~/.vimrc
+source ~/.vimrc
 vim +'PlugInstall --sync' +qa
 source ~/.vimrc
 
