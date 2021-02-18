@@ -1,8 +1,10 @@
 # Minimal vimrc configuration
 This is a minimal vimrc configuration for those who want to use vim as an IDE.
-To install it, clone the repository and run the following,
+To install it, run the following,
 
 ```
+git clone https://github.com/AnilKy001/vimrc-minimal
+cd ./vimrc-minimal
 bash vimrc_install.sh
 ```
 
