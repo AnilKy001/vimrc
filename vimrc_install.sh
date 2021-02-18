@@ -9,4 +9,4 @@ cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --clangd-completer
 
 echo "Minimal vimrc installation is successfull!"
-echo "\nDon't forget to run ':PlugInstall' when you first open vim."
+echo "Don't forget to run ':PlugInstall' when you first open vim."
