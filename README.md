@@ -6,4 +6,4 @@ To install it, clone the repository and run the following,
 bash vimrc_install.sh
 ```
 
-*Note that this is for Unix-like operating systems (Linux distros and MacOS).
+* Note that this is for Unix-like operating systems (Linux distros and MacOS).
