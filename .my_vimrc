@@ -51,3 +51,19 @@ set completeopt=menuone,longest
 "Control + z => Go to left window.
 nnoremap <C-x> :tabn<CR>
 nnoremap <C-z> :tabp<CR>
+
+"Leader is ' ' (space).
+let mapleader = " "
+"Visual mode => 'd' erases, 'x' cuts.
+vnoremap d "_d
+
+"Leader + y => Copy to system clipboard (visual mode).
+"Leader + p => Paste what is on system clipboard (visual mode).
+"Leader + x => Cut to system clipboard (visual mode).
+vnoremap <Leader>y "*y
+vnoremap <Leader>p "*p
+vnoremap <Leader>x "*x
+
+vnoremap <Leader>Y "+y
+vnoremap <Leader>P "+p
+vnoremap <Leader>X "+x
